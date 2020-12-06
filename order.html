@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>LTFMAM</title>
+      <link rel="stylesheet" href="css/style.css">
+      <meta http-equiv="Content_type" content="text/html;chrset=utf-8">
+   </head>
+
+   <body id="body">
+      <header class="header">
+         <div class="header__top">
+             <a href="index.html" class="header__lg"></a>
+             <span href="" class="header__logo logo">little trees for mister and miss</span>
+             <button id="tableo" class="header__cart">Таблица</button>
+         </div>
+         <div class="header__bot">
+             <a href="index.html" class="header__us but">о нас</a>
+             <a href="catalog.html" class="header__catalog but">каталог</a>
+             <a href="contacts.html" class="header__contacts but">контакты</a>
+             <a href="order.html" class="header__reviews but">Заказ онлайн</a>
+         </div>
+     </header>
+
+      <main class="main-order">
+         <form class="main-order__form" action="#" id="form" method="post" enctype="text/plain">
+            <div class="main-order__personalslct" style="margin-bottom: 15px;">
+            <span class="main-order__personal" style="font-size: 42px; font-weight: bold;">Укажите ваши данные</span> <br>
+            <Label for="lname">Фамилия:</Label>
+            <input type="text" id="lname" name="lname"> <br>
+            <label for="name" required>Имя*:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="tname">Отчество:</label>
+            <input type="text" id="tname" name="tname"><br>
+            <label for="phone">Телефон*:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="age">Возраст:</label>
+            <input type="text" id="age" name="age"><br>
+            <span>Пол:</span>
+            <div class="main-order__selectdiv">
+            <select class="main-order__select" name="sex" id="" >
+               <option value="Не указан">Не указан</option>
+               <option value="Мужской">Мужской</option>
+               <option value="Женский">Женский</option>
+            </select>
+         </div>
+      </div>
+         <div class="main-order__flowersrd" style="margin-bottom: 15px;">
+            <span class="main-order__flowers" style="font-size: 42px; font-weight: bold;">Какие цветы вас заинтересовали?</span> <br>
+            <p><input type="checkbox" id="rooms" name="flowers"> <label for="rooms">Комнатные растения</label> <br>
+            <input type="checkbox" id="buk" name="flowers" > <label for="buk">Составленные букеты</label> <br>
+            <input type="checkbox" id="ap" name="flowers"> <label for="ap">Продажа поштучно</label></p>
+         </div>
+         <div class="main-order__shipping" style="margin-bottom: 15px;" >
+            <span class="main-order__shiptext" style="font-size: 42px; font-weight: bold;">Способ доставки: </span>
+            <p><input type="radio" id="post" name="shipping" value="По почту" required> <label for="post"> Доставка по почте</label><Br>
+               <input type="radio" id="courier" name="shipping" value="Курьером" required> <label for="courier"> Доставка курьером</label><Br>
+               <input type="radio" id="pickup" name="shipping" value="Самовывоз" required> <label for="pickup"> Самовывоз</label></p>
+         </div>
+         <div class="main-order__comment" style="margin-bottom: 25px;">
+            <span style="font-size: 42px; font-weight: bold;">Примечания к заказу</span> <br>
+            <textarea name="" id="" cols="40" rows="5" name="comment" style="resize:none;padding: 10px; font-size: 20px;"></textarea>
+         </div>
+         <button class="main-order__button but" value="send" type="submit">Оформить заказ</button>
+         </form>
+         
+      </main>
+      <footer class="footer">
+         <div class="footer1">
+            <a href="mailto:mahan93656@hebgsw.com">E-MAIL: mahan93656@hebgsw.com</a>
+         </div>
+      </footer>
+      <div class="table" id="table">
+         <div class="table2" id="table2">
+            <button id="tablec"></button>
+            <table cellpadding="4" cellspacing="0">
+               <tr><td>ТЕКСТ</td><th colspan="3">Таблица с объединением ячеек</th><td>ТЕКСТ</td></tr>
+               <tr><td>ТЕКСТ</td><td>ТЕКСТ</td><td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi in fuga placeat aut dicta porro aliquam molestias nostrum, maiores eos laborum ratione accusantium suscipit non enim reiciendis! Animi, incidunt facere?</td><td>ТЕКСТ</td><td>ТЕКСТ</td></tr>
+            </table>
+         </div>
+   </div>
+      <script src="../js/script.js"></script>
+   </body>
+</html>
